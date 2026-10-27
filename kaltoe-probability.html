@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>칼퇴 디펜스 확률 정보 / Probability</title>
+<meta name="description" content="칼퇴 디펜스 헤드헌터 팩 확률 정보">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="alternate" hreflang="en" href="https://lifeindexnote.com/kaltoe-probability">
+<meta property="og:title" content="칼퇴 디펜스 확률 정보 / Probability">
+<meta property="og:description" content="칼퇴 디펜스 헤드헌터 팩 확률 정보">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="/"><img class="mark" src="/favicon.svg" alt="" width="30" height="30">Life Index Note</a>
+<nav class="main">
+<a class="hide-s on" href="/kaltoe">칼퇴 디펜스</a><a class="hide-s" href="/ghostmode">고스트 모드</a><a class="" href="/testers">테스터 모집</a><a class="" href="/support">고객지원</a>
+<a class="lang" href="/kaltoe-probability" hreflang="en">EN</a>
+</nav></div></header>
+<main>
+<div class="wrap doc"><div class="crumb"><a href="/">홈</a> › <a href="/kaltoe">칼퇴 디펜스</a> · <a href="/en-kaltoe">English</a></div>
+<h1>칼퇴 디펜스 확률 정보</h1>
+<p class="mut">최종 갱신일: 2026-10-23 · 운영자: Life Index Note (개인 개발자 JERIC) · 문의: <a href="mailto:jeric@kakao.com">jeric@kakao.com</a></p>
+
+<div class="box"><strong>한눈에 보기</strong>
+<ul>
+<li>헤드헌터 팩(사원 팩·경력직 팩·임원 팩)은 확률형 아이템입니다. 팩은 게임 플레이 보상·월급(게임 내 재화)·광고 시청으로 무료로 얻을 수 있고, 일부는 유료로 판매합니다.</li>
+<li>유료 판매 상품: <strong>경력직 팩 ×3</strong>(경력직 팩 3개), <strong>임원 팩 ×1</strong>(임원 팩 1개). 가격은 Google Play 상품 화면에 표시된 금액을 따릅니다.</li>
+<li>같은 팩이라면 무료로 얻은 팩과 유료로 산 팩의 확률은 <strong>동일</strong>합니다.</li>
+<li>팩은 구매 즉시 지급되며, 이용자가 직접 열 때마다 확률이 독립적으로 적용됩니다(앞선 결과가 다음 결과에 영향을 주지 않음).</li>
+<li>이 페이지의 수치는 앱의 설정값에서 자동으로 생성되며, 앱 안의 「팩 → 확률 정보」·상점 화면과 같습니다.</li>
+</ul></div>
+
+<h2>공통 규칙</h2>
+<ul>
+<li><strong>조각 → 카드:</strong> 같은 사원의 조각이 20개 모이면 카드 1장으로 자동 전환됩니다(남는 조각은 유지).</li>
+<li><strong>카드의 쓰임:</strong> 처음 얻은 사원은 즉시 입사(사용 가능)하고, 이미 입사한 사원의 카드는 레벨업 재료가 됩니다. 레벨업에는 카드와 게임 내 월급이 필요합니다.</li>
+<li><strong>등급:</strong> 일반(6명) · 희귀(6명) · 영웅(5명) · 전설(2명). 사원 목록은 팩별 표에 있습니다.</li>
+<li><strong>챕터 보정:</strong> 팩에서 나오는 조각 수는 선택한 챕터(회사)에 따라 늘어납니다: 총 조각 × (1 + 0.2 × (챕터 − 1)). 등급·카드 확률은 챕터와 무관합니다.</li>
+<li><strong>스카우트 제안서:</strong> 원하는 사원의 카드 1장을 직접 고르는 아이템으로 확률이 없습니다(필요 수량: 일반·희귀·영웅 1장, 전설 3장). 챕터 최초 클리어와 히든 조합 3개 발견마다 지급됩니다.</li>
+<li><strong>무료 획득:</strong> 판 종료 시 도달 웨이브에 따라 지급(5웨이브 이상: 사원 팩 / 20웨이브 이상: 사원 팩+사원 팩 / 35웨이브 이상: 경력직 팩+사원 팩 / 50웨이브 이상: 임원 팩+경력직 팩), 결과 화면 광고 시청 시 가장 좋은 팩 1개 추가, 월급 600으로 사원 팩 구매(하루 5회).</li>
+</ul>
+
+<h2 id="small">사원 팩</h2>
+<p>구성: <strong>조각 묶음 3개</strong> (기본 총 조각 30개, 챕터에 따라 증가) + 확정·추가 카드. 조각 묶음 하나는 아래 등급 확률로 등급을 정한 뒤, 그 등급의 사원 중 1명에게 조각을 몰아서 줍니다.</p>
+<h3>① 조각 묶음 — 등급·사원별 확률 (묶음 1개 기준)</h3>
+<div class="tablewrap"><table>
+<tr><th>등급</th><th>등급 확률</th><th>사원 수</th><th>사원 1명당 확률</th><th>해당 사원</th></tr>
+<tr><td>일반</td><td>60.00%</td><td>6명</td><td>10.00%</td><td>엑셀 장인, 전체회신, 무한로딩 VPN, 읽씹, 포스트잇, 1px 장인</td></tr>
+<tr><td>희귀</td><td>28.00%</td><td>6명</td><td>4.67%</td><td>연차 카드, 월급 루팡, 믹스커피, 사내 메신저, 컬러칩, 바이럴</td></tr>
+<tr><td>영웅</td><td>10.00%</td><td>5명</td><td>2.00%</td><td>결재 도장, 최종_진짜최종, 핫픽스, 피벗, 9 to 6</td></tr>
+<tr><td>전설</td><td>2.00%</td><td>2명</td><td>1.00%</td><td>낙하산, 사내 정치왕</td></tr>
+</table></div>
+<h3>② 묶음당 조각 수 (선택한 챕터 기준)</h3>
+<div class="tablewrap"><table>
+<tr><th>챕터</th><th>팩 총 조각</th><th>일반</th><th>희귀</th><th>영웅</th><th>전설</th></tr>
+<tr><td>1장 일반회사</td><td>30개</td><td>10개</td><td>6개</td><td>3개</td><td>2개</td></tr>
+<tr><td>2장 IT회사</td><td>36개</td><td>12개</td><td>7개</td><td>4개</td><td>2개</td></tr>
+<tr><td>3장 디자인회사</td><td>42개</td><td>14개</td><td>8개</td><td>4개</td><td>2개</td></tr>
+<tr><td>4장 광고대행사</td><td>48개</td><td>16개</td><td>10개</td><td>5개</td><td>2개</td></tr>
+<tr><td>5장 스타트업</td><td>54개</td><td>18개</td><td>11개</td><td>5개</td><td>3개</td></tr>
+<tr><td>6장 공기업</td><td>60개</td><td>20개</td><td>12개</td><td>6개</td><td>3개</td></tr>
+<tr><td>7장 대기업</td><td>66개</td><td>22개</td><td>13개</td><td>7개</td><td>3개</td></tr>
+</table></div>
+<p class="mut">묶음당 조각 수 = (총 조각 ÷ 3) × 등급 배율 (일반 ×1, 희귀 ×0.6, 영웅 ×0.3, 전설 ×0.15), 소수는 반올림하며 최소 1개. 총 조각을 3로 나누고 남는 조각은 첫 번째 묶음에 더해집니다.</p>
+<h3>③ 확정 카드 · 추가 카드</h3>
+<div class="tablewrap"><table>
+<tr><th>구분</th><th>내용</th><th>확률</th><th>사원 배정</th></tr>
+<tr><td>확정 카드</td><td colspan="3">없음</td></tr>
+<tr><td>추가 카드</td><td>영웅 등급 1장</td><td>3.00%</td><td>그 등급 사원 중 균등 (사원 1명당 0.60%)</td></tr>
+</table></div>
+
+<h2 id="mid">경력직 팩</h2>
+<p>구성: <strong>조각 묶음 4개</strong> (기본 총 조각 80개, 챕터에 따라 증가) + 확정·추가 카드. 조각 묶음 하나는 아래 등급 확률로 등급을 정한 뒤, 그 등급의 사원 중 1명에게 조각을 몰아서 줍니다.</p>
+<h3>① 조각 묶음 — 등급·사원별 확률 (묶음 1개 기준)</h3>
+<div class="tablewrap"><table>
+<tr><th>등급</th><th>등급 확률</th><th>사원 수</th><th>사원 1명당 확률</th><th>해당 사원</th></tr>
+<tr><td>일반</td><td>60.00%</td><td>6명</td><td>10.00%</td><td>엑셀 장인, 전체회신, 무한로딩 VPN, 읽씹, 포스트잇, 1px 장인</td></tr>
+<tr><td>희귀</td><td>28.00%</td><td>6명</td><td>4.67%</td><td>연차 카드, 월급 루팡, 믹스커피, 사내 메신저, 컬러칩, 바이럴</td></tr>
+<tr><td>영웅</td><td>10.00%</td><td>5명</td><td>2.00%</td><td>결재 도장, 최종_진짜최종, 핫픽스, 피벗, 9 to 6</td></tr>
+<tr><td>전설</td><td>2.00%</td><td>2명</td><td>1.00%</td><td>낙하산, 사내 정치왕</td></tr>
+</table></div>
+<h3>② 묶음당 조각 수 (선택한 챕터 기준)</h3>
+<div class="tablewrap"><table>
+<tr><th>챕터</th><th>팩 총 조각</th><th>일반</th><th>희귀</th><th>영웅</th><th>전설</th></tr>
+<tr><td>1장 일반회사</td><td>80개</td><td>20개</td><td>12개</td><td>6개</td><td>3개</td></tr>
+<tr><td>2장 IT회사</td><td>96개</td><td>24개</td><td>14개</td><td>7개</td><td>4개</td></tr>
+<tr><td>3장 디자인회사</td><td>112개</td><td>28개</td><td>17개</td><td>8개</td><td>4개</td></tr>
+<tr><td>4장 광고대행사</td><td>128개</td><td>32개</td><td>19개</td><td>10개</td><td>5개</td></tr>
+<tr><td>5장 스타트업</td><td>144개</td><td>36개</td><td>22개</td><td>11개</td><td>5개</td></tr>
+<tr><td>6장 공기업</td><td>160개</td><td>40개</td><td>24개</td><td>12개</td><td>6개</td></tr>
+<tr><td>7장 대기업</td><td>176개</td><td>44개</td><td>26개</td><td>13개</td><td>7개</td></tr>
+</table></div>
+<p class="mut">묶음당 조각 수 = (총 조각 ÷ 4) × 등급 배율 (일반 ×1, 희귀 ×0.6, 영웅 ×0.3, 전설 ×0.15), 소수는 반올림하며 최소 1개. 총 조각을 4로 나누고 남는 조각은 첫 번째 묶음에 더해집니다.</p>
+<h3>③ 확정 카드 · 추가 카드</h3>
+<div class="tablewrap"><table>
+<tr><th>구분</th><th>내용</th><th>확률</th><th>사원 배정</th></tr>
+<tr><td>확정 카드</td><td>희귀 등급 1장</td><td>100%</td><td>그 등급 사원 중 균등 (사원 1명당 16.67%)</td></tr>
+<tr><td>추가 카드</td><td>영웅 등급 1장</td><td>10.00%</td><td>그 등급 사원 중 균등 (사원 1명당 2.00%)</td></tr>
+<tr><td>추가 카드</td><td>전설 등급 1장</td><td>1.00%</td><td>그 등급 사원 중 균등 (사원 1명당 0.50%)</td></tr>
+</table></div>
+
+<h2 id="exec">임원 팩</h2>
+<p>구성: <strong>조각 묶음 5개</strong> (기본 총 조각 200개, 챕터에 따라 증가) + 확정·추가 카드. 조각 묶음 하나는 아래 등급 확률로 등급을 정한 뒤, 그 등급의 사원 중 1명에게 조각을 몰아서 줍니다.</p>
+<h3>① 조각 묶음 — 등급·사원별 확률 (묶음 1개 기준)</h3>
+<div class="tablewrap"><table>
+<tr><th>등급</th><th>등급 확률</th><th>사원 수</th><th>사원 1명당 확률</th><th>해당 사원</th></tr>
+<tr><td>일반</td><td>60.00%</td><td>6명</td><td>10.00%</td><td>엑셀 장인, 전체회신, 무한로딩 VPN, 읽씹, 포스트잇, 1px 장인</td></tr>
+<tr><td>희귀</td><td>28.00%</td><td>6명</td><td>4.67%</td><td>연차 카드, 월급 루팡, 믹스커피, 사내 메신저, 컬러칩, 바이럴</td></tr>
+<tr><td>영웅</td><td>10.00%</td><td>5명</td><td>2.00%</td><td>결재 도장, 최종_진짜최종, 핫픽스, 피벗, 9 to 6</td></tr>
+<tr><td>전설</td><td>2.00%</td><td>2명</td><td>1.00%</td><td>낙하산, 사내 정치왕</td></tr>
+</table></div>
+<h3>② 묶음당 조각 수 (선택한 챕터 기준)</h3>
+<div class="tablewrap"><table>
+<tr><th>챕터</th><th>팩 총 조각</th><th>일반</th><th>희귀</th><th>영웅</th><th>전설</th></tr>
+<tr><td>1장 일반회사</td><td>200개</td><td>40개</td><td>24개</td><td>12개</td><td>6개</td></tr>
+<tr><td>2장 IT회사</td><td>240개</td><td>48개</td><td>29개</td><td>14개</td><td>7개</td></tr>
+<tr><td>3장 디자인회사</td><td>280개</td><td>56개</td><td>34개</td><td>17개</td><td>8개</td></tr>
+<tr><td>4장 광고대행사</td><td>320개</td><td>64개</td><td>38개</td><td>19개</td><td>10개</td></tr>
+<tr><td>5장 스타트업</td><td>360개</td><td>72개</td><td>43개</td><td>22개</td><td>11개</td></tr>
+<tr><td>6장 공기업</td><td>400개</td><td>80개</td><td>48개</td><td>24개</td><td>12개</td></tr>
+<tr><td>7장 대기업</td><td>440개</td><td>88개</td><td>53개</td><td>26개</td><td>13개</td></tr>
+</table></div>
+<p class="mut">묶음당 조각 수 = (총 조각 ÷ 5) × 등급 배율 (일반 ×1, 희귀 ×0.6, 영웅 ×0.3, 전설 ×0.15), 소수는 반올림하며 최소 1개. 총 조각을 5로 나누고 남는 조각은 첫 번째 묶음에 더해집니다.</p>
+<h3>③ 확정 카드 · 추가 카드</h3>
+<div class="tablewrap"><table>
+<tr><th>구분</th><th>내용</th><th>확률</th><th>사원 배정</th></tr>
+<tr><td>확정 카드</td><td>영웅 등급 1장</td><td>100%</td><td>그 등급 사원 중 균등 (사원 1명당 20.00%)</td></tr>
+<tr><td>추가 카드</td><td>전설 등급 1장</td><td>8.00%</td><td>그 등급 사원 중 균등 (사원 1명당 4.00%)</td></tr>
+</table></div>
+
+<h2>청약철회 및 문의</h2>
+<p>유료 팩은 디지털 콘텐츠로, 개봉(지급) 후에는 청약철회가 제한될 수 있습니다. 결제·환불은 Google Play 정책을 따르며, 문의는 <a href="mailto:jeric@kakao.com">jeric@kakao.com</a>으로 보내주세요.</p>
+<p class="mut">최종 갱신일: 2026-10-23. 확률·구성이 바뀌면 이 페이지를 먼저 갱신하고 앱 업데이트에 반영합니다.</p>
+
+<h2 id="en">English Summary</h2>
+<p>Headhunter packs (Staff / Experienced / Executive) are randomized items. They can be earned for free in play, bought with in-game salary, or (Experienced ×3 and Executive ×1) purchased with real money via Google Play. Odds are identical regardless of how a pack was obtained and are applied independently each time a pack is opened. Each pack contains several fragment stacks (grade drawn per stack: common 60.00%, rare 28.00%, epic 10.00%, legendary 2.00%; the unit within a grade is uniform), plus guaranteed/bonus cards listed in the tables above. 20 fragments of the same unit automatically become 1 card. Contact: jeric@kakao.com. Last updated: 2026-10-23.</p>
+</div>
+</main>
+<footer><div class="wrap cols">
+<div><h5>회사</h5><dl class="biz"><dt>상호</dt><dd>라이프인덱스노트 (Life Index Note)</dd><dt>대표</dt><dd>김민교</dd>
+<dt>사업자등록번호</dt><dd>231-18-02679</dd><dt>통신판매업 신고</dt><dd>제2026-대구수성구-1366호</dd>
+<dt>주소</dt><dd>대구광역시 수성구 만촌로5길 13, 306호 (만촌동, 42057)</dd><dt>전화</dt><dd>0502-1948-6069</dd><dt>이메일</dt><dd><a href="mailto:jeric@kakao.com">jeric@kakao.com</a></dd></dl></div>
+<div><h5>칼퇴 디펜스</h5><ul>
+<li><a href="/kaltoe">소개</a></li>
+<li><a href="/kaltoe-privacy">개인정보처리방침</a></li><li><a href="/kaltoe-terms">이용약관</a></li><li><a href="/kaltoe-probability">확률 정보</a></li></ul></div>
+<div><h5>고스트 모드</h5><ul>
+<li><a href="/ghostmode">소개</a></li>
+<li><a href="/ghostmode-privacy">개인정보처리방침</a></li>
+<li><a href="/support">고객지원</a></li></ul></div>
+</div>
+<div class="wrap" style="margin-top:28px">© 2026 라이프인덱스노트 Life Index Note</div>
+</footer>
+</body>
+</html>
