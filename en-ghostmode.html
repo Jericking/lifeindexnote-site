@@ -30,7 +30,7 @@
 <p class="lead">Social battery at zero but the group chat won't stop buzzing? Ghost replies for you and helps you slip away gracefully.</p>
 <div class="btns"><a class="btn pri" href="/en-testers">Try it as a tester</a><a class="btn" href="https://play.google.com/store/apps/details?id=com.jeric.ghostmode">Google Play</a></div>
 </div></div>
-<section><div class="wrap"><div class="shots"><img src="/ghost-en-1.webp" alt="Ghost Mode screenshot 1" loading="lazy" width="480" height="960"><img src="/ghost-en-2.webp" alt="Ghost Mode screenshot 2" loading="lazy" width="480" height="960"><img src="/ghost-en-3.webp" alt="Ghost Mode screenshot 3" loading="lazy" width="480" height="960"><img src="/ghost-en-4.webp" alt="Ghost Mode screenshot 4" loading="lazy" width="480" height="960"></div></div></section>
+<section><div class="wrap"><div class="shots"><a href="/ghost-en-1.webp"><img src="/ghost-en-1.webp" alt="Ghost Mode screenshot 1" loading="lazy" width="720" height="1440"></a><a href="/ghost-en-2.webp"><img src="/ghost-en-2.webp" alt="Ghost Mode screenshot 2" loading="lazy" width="720" height="1440"></a><a href="/ghost-en-3.webp"><img src="/ghost-en-3.webp" alt="Ghost Mode screenshot 3" loading="lazy" width="720" height="1440"></a><a href="/ghost-en-4.webp"><img src="/ghost-en-4.webp" alt="Ghost Mode screenshot 4" loading="lazy" width="720" height="1440"></a></div></div></section>
 <section class="soft"><div class="wrap"><h2 class="sec">Features</h2><p class="sub">Everything for the days you can't text back.</p><div class="grid g3"><div class="card feat"><h4>Auto-reply</h4><p>Replies straight from the notification Reply action in the apps you choose: KakaoTalk, Discord, Slack, SMS, WhatsApp, Telegram and more.</p></div><div class="card feat"><h4>Context-aware replies</h4><p>Tells urgent messages, questions and casual chats apart, with an optional "(auto-reply)" tag.</p></div><div class="card feat"><h4>Social battery</h4><p>Shows your remaining social energy from today's messages and check-ins (optionally calendar and screen time).</p></div><div class="card feat"><h4>Auto Ghost</h4><p>Turns on by itself when your battery drops below a level you set.</p></div><div class="card feat"><h4>Graceful exit</h4><p>Fake incoming call, fake urgent message, tap-to-copy excuses.</p></div><div class="card feat"><h4>Privacy</h4><p>All data stays on your phone, never sent to a server. No accessibility service.</p></div></div></div></section>
 <section><div class="wrap"><h2 class="sec">Free / Premium</h2>
 <div class="grid g2"><div class="card feat"><h4>Free</h4><p>5 auto-replies per day, with banner ads</p></div>
@@ -52,5 +52,7 @@
 </div>
 <div class="wrap" style="margin-top:28px">© 2026 라이프인덱스노트 Life Index Note</div>
 </footer>
+<div class="lb" id="lb"><img alt=""></div>
+<script>document.addEventListener('click',e=>{const a=e.target.closest('.shots a');const lb=document.getElementById('lb');if(a){e.preventDefault();lb.querySelector('img').src=a.href;lb.classList.add('on');}else if(e.target.closest('#lb')){lb.classList.remove('on');}});document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('lb').classList.remove('on')});</script>
 </body>
 </html>

@@ -30,7 +30,7 @@
 <p class="lead">소셜 배터리가 바닥났는데 단톡방 알림은 계속 울린다면? 고스트가 대신 답장하고, 자리에서 빠져나오게 도와줘요.</p>
 <div class="btns"><a class="btn pri" href="/testers">테스터로 먼저 해보기</a><a class="btn" href="https://play.google.com/store/apps/details?id=com.jeric.ghostmode">Google Play</a></div>
 </div></div>
-<section><div class="wrap"><div class="shots"><img src="/ghost-ko-1.webp" alt="고스트 모드 화면 1" loading="lazy" width="480" height="960"><img src="/ghost-ko-2.webp" alt="고스트 모드 화면 2" loading="lazy" width="480" height="960"><img src="/ghost-ko-3.webp" alt="고스트 모드 화면 3" loading="lazy" width="480" height="960"><img src="/ghost-ko-4.webp" alt="고스트 모드 화면 4" loading="lazy" width="480" height="960"></div></div></section>
+<section><div class="wrap"><div class="shots"><a href="/ghost-ko-1.webp"><img src="/ghost-ko-1.webp" alt="고스트 모드 화면 1" loading="lazy" width="720" height="1440"></a><a href="/ghost-ko-2.webp"><img src="/ghost-ko-2.webp" alt="고스트 모드 화면 2" loading="lazy" width="720" height="1440"></a><a href="/ghost-ko-3.webp"><img src="/ghost-ko-3.webp" alt="고스트 모드 화면 3" loading="lazy" width="720" height="1440"></a><a href="/ghost-ko-4.webp"><img src="/ghost-ko-4.webp" alt="고스트 모드 화면 4" loading="lazy" width="720" height="1440"></a></div></div></section>
 <section class="soft"><div class="wrap"><h2 class="sec">기능</h2><p class="sub">답장할 기운이 없을 때를 위한 모든 것.</p><div class="grid g3"><div class="card feat"><h4>자동 답장</h4><p>카카오톡·디스코드·슬랙·문자·왓츠앱·텔레그램 등 고른 앱의 알림 '답장' 기능으로 바로 답장해요.</p></div><div class="card feat"><h4>상황별 문구</h4><p>급한 메시지·질문·일반 메시지를 구분해 알맞은 문구를 고르고, '(자동응답)' 표시를 붙일 수 있어요.</p></div><div class="card feat"><h4>소셜 배터리</h4><p>받은 메시지 수와 에너지 체크인(선택: 캘린더·화면 사용 시간)으로 남은 사회적 에너지를 보여줘요.</p></div><div class="card feat"><h4>자동 고스트</h4><p>배터리가 정한 값 아래로 떨어지면 고스트 모드가 알아서 켜져요.</p></div><div class="card feat"><h4>우아한 탈출</h4><p>가짜 전화, 가짜 급한 메시지 알림, 상황별 핑계 문구 복사.</p></div><div class="card feat"><h4>프라이버시</h4><p>모든 데이터는 내 폰에만 저장되고 서버로 보내지 않아요. 접근성 서비스를 쓰지 않아요.</p></div></div></div></section>
 <section><div class="wrap"><h2 class="sec">무료 / 프리미엄</h2>
 <div class="grid g2"><div class="card feat"><h4>무료</h4><p>하루 자동 답장 5회, 배너 광고 포함</p></div>
@@ -52,5 +52,7 @@
 </div>
 <div class="wrap" style="margin-top:28px">© 2026 라이프인덱스노트 Life Index Note</div>
 </footer>
+<div class="lb" id="lb"><img alt=""></div>
+<script>document.addEventListener('click',e=>{const a=e.target.closest('.shots a');const lb=document.getElementById('lb');if(a){e.preventDefault();lb.querySelector('img').src=a.href;lb.classList.add('on');}else if(e.target.closest('#lb')){lb.classList.remove('on');}});document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('lb').classList.remove('on')});</script>
 </body>
 </html>

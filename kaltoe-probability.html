@@ -155,5 +155,7 @@
 </div>
 <div class="wrap" style="margin-top:28px">© 2026 라이프인덱스노트 Life Index Note</div>
 </footer>
+<div class="lb" id="lb"><img alt=""></div>
+<script>document.addEventListener('click',e=>{const a=e.target.closest('.shots a');const lb=document.getElementById('lb');if(a){e.preventDefault();lb.querySelector('img').src=a.href;lb.classList.add('on');}else if(e.target.closest('#lb')){lb.classList.remove('on');}});document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('lb').classList.remove('on')});</script>
 </body>
 </html>
