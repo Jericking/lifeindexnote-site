@@ -54,6 +54,8 @@ footer .cols{display:grid;gap:24px;grid-template-columns:2fr 1fr 1fr}
 @media (max-width:760px){footer .cols{grid-template-columns:1fr}}
 footer h5{margin:0 0 8px;color:var(--fg);font-size:14px}footer ul{list-style:none;margin:0;padding:0}footer li{margin:4px 0}footer a{color:var(--mut)}
 .doc{max-width:780px;padding:48px 20px 72px}
+.facts{display:grid;grid-template-columns:120px 1fr;gap:6px 16px;margin:16px 0;font-size:15px}.facts dt{color:var(--mut)}.facts dd{margin:0}
+.doc img{max-width:100%;height:auto;margin:10px 0}
 .doc h1{font-size:30px;letter-spacing:-.02em;margin:0 0 6px}
 .doc h2{font-size:20px;margin:36px 0 8px;padding-top:14px;border-top:1px solid var(--ln)}
 .doc table{width:100%;border-collapse:collapse;margin:10px 0;font-size:14px}.doc th,.doc td{border:1px solid var(--ln);padding:8px 10px;text-align:left;vertical-align:top}.doc th{background:var(--soft)}
